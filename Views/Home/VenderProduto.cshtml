@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Venda produto";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h2>Venda o seu produto aqui</h2>
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" class="form-control" id="nome" name="nome">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label for="preco">Preço:</label>
+            <input type="number" class="form-control" id="preco" name="preco">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label for="descricao">Descrição do Produto:</label>
+            <textarea class="form-control" id="descricao" name="descricao" rows="4"></textarea>
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label for="imagem">Imagem do Produto:</label>
+            <input type="file" class="form-control-file" id="imagem" name="imagem" accept="image/*">
+        </div>
+
+        <br />
+
+        <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
+    </form>
+</div>
+
